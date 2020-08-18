@@ -1,0 +1,24 @@
+{
+    "version": 2,
+    "name": "petgram",
+    "builds": [
+        {
+            "user": "@vercel/static-build",
+            "src": "package.json"
+        }
+    ],
+    "routes": [
+        {
+            "src": "(.*).js",
+            "dest": "/$l.js"
+        },
+        {
+            "src": "(.*).json",
+            "dest": "/$l.json"
+        },
+        {
+            "src": "/.*",
+            "dest": "/index.html"
+        }
+    ]
+}
