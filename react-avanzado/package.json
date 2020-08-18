@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "vercel-build": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "standard",
     "build": "webpack",
@@ -30,14 +31,18 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
-  "standard":{
-    "ignore":[
+  "standard": {
+    "ignore": [
       "/api/**"
     ]
   },
-  "eslintConfig":{
-    "extends":["./node_modules/standard/eslintrc.json"],
-    "plugins": ["html"],
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ],
+    "plugins": [
+      "html"
+    ],
     "parser": "babel-eslint"
   }
 }
