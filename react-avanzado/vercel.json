@@ -3,7 +3,7 @@
     "name": "petgram",
     "builds": [
         {
-            "user": "@vercel/static-build",
+            "use": "@vercel/static-build",
             "src": "package.json"
         }
     ],
